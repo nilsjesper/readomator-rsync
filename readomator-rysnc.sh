@@ -11,4 +11,4 @@ sed -i '' "s/$src/$dest/g" out/index.xml
 
 rsync -avz out/ $DEST_RSYNC
 
-echo "Readomator Podcast Downloaded & Rsync'd"
+echo "Readomator Podcast Downloaded & Rsync'd.  Your podcast is available at $DEST_FEED/index.xml"
