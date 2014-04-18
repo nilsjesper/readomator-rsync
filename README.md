@@ -10,6 +10,10 @@ This bash script will slurp down the generated AIFF audio files and the RSS feed
 
 ## Configuration
 
+### FFMPEG
+You'll need to install FFMPEG (http://www.ffmpeg.org/) in order to convert AIFF Files to MP3. Future versions might make this optional but for now, that's the way it is.  Homebrew makes this real simple.
+
+### Config File
 Rename config.sh.sample to config.sh and update the following values:
 
 * SRC_FEED - This is the URL to your local Readomator podcast RSS feed.  All you should need to do here is update the example string with your Instapaper username.
