@@ -19,6 +19,7 @@ Rename config.sh.sample to config.sh and update the following values:
 * SRC_FEED - This is the URL to your local Readomator podcast RSS feed.  All you should need to do here is update the example string with your Instapaper username.
 * DEST_FEED - The web accessible URL where your rsync'd feed will live.  Note, you only need the directory and no trailing slash.
 * DEST_RSYNC - the "destination" portion of the rsync command.  Assuming you're rsyncing this to a remote server, this will need the username@hostname:/path/to/the/dest/feed/you/entered/above
+* READOMATOR_PATH - This is the path to the Readomator path itself. Assuming you have this instaled in the Applications directory the default should be fine.
 
 ## Installing & Running
 
