@@ -3,9 +3,20 @@
 #load configs
 . config.sh
 
+# Make sure Readomator is open so it can update
+echo "--------------------------"
+echo "Loading Readomator"
+echo "--------------------------"
+
+open --hide --background $READOMATOR_PATH
+
 echo "--------------------------"
 echo "Downloading Podcast Audio & Feed"
 echo "--------------------------"
+
+#clean out the existing files
+rm ./out/*.mp3
+rm ./out/*.xml
 
 #get the RSS feed and all of its enclosures
 wget -q -O- $SRC_FEED | grep -o '<enclosure url="[^"]*' | grep -o '[^"]*$' | xargs wget -nc -T 15 -c --directory-prefix=out
